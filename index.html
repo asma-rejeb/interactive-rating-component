@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
     <link
       rel="icon"
       type="image/png"
@@ -14,8 +13,8 @@
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
+    <!-- Rating state start -->
     <div class="box">
-      <!-- Rating state start -->
       <img src="/images/icon-star.svg" alt="star" class="star" />
       <h2>How did we do?</h2>
 
@@ -44,11 +43,12 @@
       </div>
 
       <button class="submit">Submit</button>
-      <!-- Rating state end -->
     </div>
+      <!-- Rating state end -->
 
+
+    <!-- Thank you state start -->
     <div class="thanks hidden">
-      <!-- Thank you state start -->
       <img class="thanks-img" src="images/illustration-thank-you.svg" alt="" />
 
       <p class="select">You selected <span id="rating"></span> out of 5</p>
@@ -59,9 +59,10 @@
         We appreciate you taking the time to give a rating. If you ever need
         more support, don’t hesitate to get in touch!
       </p>
-      <!-- Thank you state end -->
+      <button class="again">Submit again</button>
     </div>
-
+  <!-- Thank you state end -->
+    
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"

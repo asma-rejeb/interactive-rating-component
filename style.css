@@ -1,130 +1,147 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+    margin    : 0;
+    padding   : 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color:  #050709;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin:  140px auto ;
-
+body {
+    background-color: #050709;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    flex-direction  : column;
+    margin          : 100px auto;
 }
 
-.box .star{
+.box .star {
     background-color: #2d2c33;
-    border-radius: 50%;
-    padding: 10px;
-    margin-bottom: 20px;
+    border-radius   : 50%;
+    padding         : 10px;
+    margin-bottom   : 20px;
 }
 
-.box , .thanks{
-    background-color: rgb(36, 37, 51);
-    width: 350px;
-    height: 350px;
-    border-radius: 5%;
-    padding: 30px;
-
+@media (max-width: 767px) {
+    .box,
+    .thanks {
+        background-color: rgb(36, 37, 51);
+        width           : 250px;
+        height          : 400px;
+        border-radius   : 5%;
+        padding         : 30px;
+    }
 }
-.box h2 ,.thanks h2{
-    color: white;
+
+@media (min-width: 768px) {
+    .box,
+    .thanks {
+        background-color: rgb(36, 37, 51);
+        width           : 450px;
+        height          : 400px;
+        border-radius   : 5%;
+        padding         : 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .box,
+    .thanks {
+        background-color: rgb(36, 37, 51);
+        width           : 600px;
+        height          : 350px;
+        border-radius   : 5%;
+        padding         : 30px;
+    }
+}
+
+.box h2,
+.thanks h2 {
+    color         : white;
     padding-bottom: 10px;
-
 }
 
 .box p,
-.thanks p
-{
-    color: #A9A9A9;
+.thanks p {
+    color         : #A9A9A9;
     padding-bottom: 20px;
-
 }
 
-ul{
+ul {
     list-style-type: none;
-
 }
+
 .rate ul {
-    display: flex;
+    display        : flex;
     justify-content: space-around;
-    align-items: center;
-    margin-bottom: 2rem;
+    align-items    : center;
+    margin-bottom  : 2rem;
 }
-.rate ul li button{
+
+.rate ul li button {
     background-color: #2d2c33;
-    color: #A9A9A9;
-    border-radius: 50%;
-    padding-top: 0.5rem;
-    width: 2rem;
-    height: 2rem;
-    /* margin: 20px 10px; */
-    border: none;
+    color           : #A9A9A9;
+    border-radius   : 50%;
+    padding-top     : 0.5rem;
+    width           : 2rem;
+    height          : 2rem;
+    border          : none;
 }
-.rate ul li button:hover{
+
+.rate ul li button:hover {
     background-color: rgb(233, 95, 4);
-    color: white;
-
+    color           : white;
 }
 
-.rate ul li button:focus{
-    background-color: #2d2c33;
+.rate ul li button:focus {
+    background-color: lightgrey;
 }
 
-.box button{
+.box button,
+.thanks button {
     background-color: rgb(233, 95, 4);
-    color: white;
-    width: 100%;  
-    border:none;
-    border-radius: 20px ;
-    padding: 10px;
-    text-transform: uppercase;
-
-
+    color           : white;
+    width           : 100%;
+    border          : none;
+    border-radius   : 20px;
+    padding         : 10px;
+    text-transform  : uppercase;
 }
 
-
-.box button:hover{
+.box button:hover .thanks button:hover {
     background-color: white;
-    color: rgb(233, 95, 4);
+    color           : rgb(233, 95, 4);
 }
 
-
-
-
-.thanks .thanks-img{
-    display: block;
-    margin: 0 auto 2rem;
-}
-
-.thanks{
-    display: flex;
+.thanks {
+    display       : flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-    
+    align-items   : center;
+    text-align    : center;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
-.thanks .select{
-    /* width: 100%; */
+
+.thanks .thanks-img {
+    display: block;
+    margin : 0 auto 10px;
+}
+
+.thanks .select {
     background-color: #2d2c33;
-    color: rgb(233, 111, 30);
-    padding: 10px ;
-    border-radius: 20px;
-    margin-bottom: 1rem;
+    color           : rgb(233, 111, 30);
+    padding         : 10px;
+    border-radius   : 20px;
+    margin-bottom   : 10px;
 }
 
-
-.attribution { 
+.attribution {
     margin-top: 20px;
-    font-size: 11px; 
-    text-align: center; 
-    color: white;
+    font-size : 11px;
+    text-align: center;
+    color     : white;
 }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

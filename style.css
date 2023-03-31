@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  #050709;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:  140px auto ;
+
+}
+
+.box .star{
+    background-color: #2d2c33;
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.box , .thanks{
+    background-color: rgb(36, 37, 51);
+    width: 350px;
+    height: 350px;
+    border-radius: 5%;
+    padding: 30px;
+
+}
+.box h2 ,.thanks h2{
+    color: white;
+    padding-bottom: 10px;
+
+}
+
+.box p,
+.thanks p
+{
+    color: #A9A9A9;
+    padding-bottom: 20px;
+
+}
+
+ul{
+    list-style-type: none;
+
+}
+.rate ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.rate ul li button{
+    background-color: #2d2c33;
+    color: #A9A9A9;
+    border-radius: 50%;
+    padding-top: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    /* margin: 20px 10px; */
+    border: none;
+}
+.rate ul li button:hover{
+    background-color: rgb(233, 95, 4);
+    color: white;
+
+}
+
+.rate ul li button:focus{
+    background-color: #2d2c33;
+}
+
+.box button{
+    background-color: rgb(233, 95, 4);
+    color: white;
+    width: 100%;  
+    border:none;
+    border-radius: 20px ;
+    padding: 10px;
+    text-transform: uppercase;
+
+
+}
+
+
+.box button:hover{
+    background-color: white;
+    color: rgb(233, 95, 4);
+}
+
+
+
+
+.thanks .thanks-img{
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+.thanks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    
+}
+
+.hidden{
+    display: none;
+}
+.thanks .select{
+    /* width: 100%; */
+    background-color: #2d2c33;
+    color: rgb(233, 111, 30);
+    padding: 10px ;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+
+.attribution { 
+    margin-top: 20px;
+    font-size: 11px; 
+    text-align: center; 
+    color: white;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
